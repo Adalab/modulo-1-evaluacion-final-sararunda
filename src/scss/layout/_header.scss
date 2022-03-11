@@ -2,6 +2,8 @@
 .header {
   background-image: url("../images/header.jpg");
   background-size: cover;
+  position: fixed;
+  width: 100vh;
   &__menu {
     position: absolute;
     padding-top: 55px;
@@ -20,18 +22,18 @@
     text-align: center;
     padding: 19px 0 64px 0;
     &__title_header {
-      color: #0c474b;
+      color: $green-dark;
       font-size: 24px;
       font-weight: 600;
-      font-family: "Poppins", sans-serif;
+      font-family: $font-tex;
       padding-bottom: 24px;
     }
     &__buy_now {
       width: 176px;
       padding: 12px 24px;
-      background-color: #0c474b;
+      background-color: $green-dark;
       border: none;
-      color: #ffffff;
+      color: $white;
       font-family: "Poppins", sans-serif;
       margin-bottom: auto;
     }
