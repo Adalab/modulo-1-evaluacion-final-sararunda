@@ -1,3 +1,31 @@
 .section-1 {
-  margin-top: 401px;
+  background-color: $grey;
+  &__title_advantages {
+    text-align: center;
+    font-family: $font-title;
+    color: $green-dark;
+    padding: 41px 0 37px 0;
+    &--capitalize {
+      text-transform: uppercase;
+    }
+  }
+  &__advantages {
+    text-align: center;
+    &__icon_order {
+      width: 90px;
+      height: 99px;
+      margin: 20px 0;
+    }
+    &__title_order {
+      font-family: $font-title;
+      font-size: 20px;
+      color: $green-dark;
+      padding-bottom: 12px;
+    }
+    &__text_order {
+      font-family: $font-title;
+      color: $green-dark;
+      padding-bottom: 20px;
+    }
+  }
 }

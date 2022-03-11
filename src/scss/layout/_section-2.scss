@@ -32,14 +32,17 @@
     background-color: $grey;
     &__title_spaces {
       font-family: $font-title;
-      padding-top: 87px;
+      padding: 87px 27px 0 27px;
       color: $green-dark;
+      text-align: center;
     }
     &__text_spaces {
-      padding-top: 10px;
+      padding: 10px 27px 0 27px;
       font-family: $font-title;
       color: $green-dark;
       font-size: 14px;
+      text-align: center;
+      font-weight: 400;
     }
     &__buy_now {
       padding: 12px 24px;

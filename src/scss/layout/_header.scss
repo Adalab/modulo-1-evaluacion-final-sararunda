@@ -3,11 +3,9 @@
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center center;
-  position: fixed;
-  top: 0;
   width: 100vw;
   &__menu {
-    position: absolute;
+    position: fixed;
     padding-top: 55px;
     font-size: 24px;
     color: #0c474b;
