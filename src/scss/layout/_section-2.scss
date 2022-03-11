@@ -1,0 +1,64 @@
+.section-2 {
+  height: 100vh;
+  &__article_free {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $orange;
+    &__van {
+      padding: 46px 0 10px 0;
+    }
+    &__title_free {
+      font-family: $font-title;
+      color: $white;
+    }
+    &__text_free {
+      font-family: $font-title;
+      color: $white;
+      font-size: 14px;
+    }
+    &__link_buy {
+      font-family: $font-title;
+      color: $white;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 12px 24px;
+      margin-bottom: 63px;
+    }
+  }
+  &__article_spaces {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $grey;
+    &__title_spaces {
+      font-family: $font-title;
+      padding-top: 87px;
+      color: $green-dark;
+    }
+    &__text_spaces {
+      padding-top: 10px;
+      font-family: $font-title;
+      color: $green-dark;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    &__buy_now {
+      padding: 12px 24px;
+      background-color: $green-dark;
+      border: none;
+      color: $white;
+      font-family: $font-title;
+      font-weight: 600;
+      font-size: 16px;
+      margin: 40px 0 92px 0;
+    }
+    &__image_spaces {
+      background-image: url("../images/creando-espacios.jpg");
+      background-size: cover;
+      background-position: center center;
+      width: 100vw;
+      height: 304px;
+    }
+  }
+}

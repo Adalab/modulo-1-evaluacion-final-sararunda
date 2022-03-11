@@ -2,8 +2,10 @@
 .header {
   background-image: url("../images/header.jpg");
   background-size: cover;
+  background-position: center center;
   position: fixed;
-  width: 100vh;
+  top: 0;
+  width: 100vw;
   &__menu {
     position: absolute;
     padding-top: 55px;
@@ -25,17 +27,17 @@
       color: $green-dark;
       font-size: 24px;
       font-weight: 600;
-      font-family: $font-tex;
+      font-family: $font-title;
       padding-bottom: 24px;
     }
     &__buy_now {
-      width: 176px;
       padding: 12px 24px;
       background-color: $green-dark;
       border: none;
       color: $white;
-      font-family: "Poppins", sans-serif;
-      margin-bottom: auto;
+      font-family: $font-title;
+      font-weight: 600;
+      font-size: 16px;
     }
   }
 }
