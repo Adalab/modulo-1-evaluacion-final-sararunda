@@ -1,0 +1,39 @@
+/*CSS HEADER*/
+.header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  &__menu {
+    position: absolute;
+    padding-top: 55px;
+    font-size: 24px;
+    color: #0c474b;
+    padding-left: 33px;
+  }
+  &__icon-brand {
+    text-align: center;
+    padding: 19px 0 100px 0;
+    width: 213px;
+    display: block;
+    margin: auto;
+  }
+  &__top {
+    text-align: center;
+    padding: 19px 0 64px 0;
+    &__title_header {
+      color: #0c474b;
+      font-size: 24px;
+      font-weight: 600;
+      font-family: "Poppins", sans-serif;
+      padding-bottom: 24px;
+    }
+    &__buy_now {
+      width: 176px;
+      padding: 12px 24px;
+      background-color: #0c474b;
+      border: none;
+      color: #ffffff;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: auto;
+    }
+  }
+}
