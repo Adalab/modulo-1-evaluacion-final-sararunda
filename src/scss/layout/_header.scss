@@ -20,12 +20,15 @@
     left: 0;
   }
   &__icon-brand {
-    padding: 19px 0 100px 0;
+    padding: 39px 0 100px 0;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     margin: auto;
+  }
+  &__nav {
+    display: none;
   }
   &__top {
     padding: 10px 30px 0 30px;
@@ -55,6 +58,8 @@
   }
 }
 // HEADER TABLET VERSION SCSS
+/**/
+/**/
 @media all and (min-width: 768px) {
   .header {
     justify-content: flex-start;
@@ -68,6 +73,42 @@
       &__title_header {
         font-size: 36px;
       }
+    }
+  }
+}
+/**/
+/**/
+// HEADER DESKTOP VERSION
+/**/
+/**/
+@media all and (min-width: 1200px) {
+  .header {
+    &__menu {
+      visibility: hidden;
+    }
+
+    &__nav {
+      display: block;
+      position: absolute;
+      top: 77px;
+      left: 90px;
+
+      &__list {
+        display: flex;
+        list-style: none;
+        &__link {
+          color: $green-dark;
+          text-decoration: none;
+          padding: 20px;
+          &:first-child {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+    &__top {
+      padding-left: 90px;
+      width: 500px;
     }
   }
 }
