@@ -3,7 +3,6 @@
   background-color: $grey;
   &__title_advantages {
     text-align: center;
-    font-family: $font-title;
     color: $green-dark;
     padding: 41px 0 37px 0;
     &--capitalize {
@@ -21,13 +20,11 @@
       height: 99px;
     }
     &__title_order {
-      font-family: $font-title;
       font-size: 20px;
       color: $green-dark;
       padding-top: 20px;
     }
     &__text_order {
-      font-family: $font-title;
       color: $green-dark;
     }
   }

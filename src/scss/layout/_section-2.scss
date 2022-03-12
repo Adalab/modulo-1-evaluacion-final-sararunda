@@ -8,16 +8,13 @@
       padding: 46px 0 10px 0;
     }
     &__title_free {
-      font-family: $font-title;
       color: $white;
     }
     &__text_free {
-      font-family: $font-title;
       color: $white;
       font-size: 14px;
     }
     &__link_buy {
-      font-family: $font-title;
       color: $white;
       font-weight: bold;
       padding: 12px 24px;
@@ -34,14 +31,12 @@
     align-items: center;
     background-color: $grey;
     &__title_spaces {
-      font-family: $font-title;
       padding: 87px 27px 0 27px;
       color: $green-dark;
       text-align: center;
     }
     &__text_spaces {
       padding: 10px 27px 0 27px;
-      font-family: $font-title;
       color: $green-dark;
       font-size: 14px;
       text-align: center;
@@ -52,7 +47,6 @@
       background-color: $green-dark;
       border: none;
       color: $white;
-      font-family: $font-title;
       font-weight: 600;
       font-size: 16px;
       margin: 40px 0 92px 0;
