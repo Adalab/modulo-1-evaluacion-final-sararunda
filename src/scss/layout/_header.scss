@@ -1,4 +1,4 @@
-/*CSS HEADER*/
+// HEADER MOBILE VERSION SCSS
 .header {
   background-image: url("../images/header.jpg");
   background-size: cover;
@@ -38,6 +38,18 @@
     &__buy_now:hover {
       -webkit-transition: all 1.9s ease;
       -webkit-transform: scale(1.1);
+    }
+  }
+}
+// HEADER TABLET VERSION SCSS
+@media all and (min-width: 768px) {
+  .header {
+    &__top {
+      text-align: left;
+      padding-left: 147px;
+    }
+    &__menu {
+      padding-left: 82px;
     }
   }
 }

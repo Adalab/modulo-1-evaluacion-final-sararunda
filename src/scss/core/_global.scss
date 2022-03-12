@@ -5,7 +5,7 @@ html {
 
 .wrapper {
   margin: 0 45px;
-  @media all and (min-width: 900px) {
-    margin: 0 101px;
+  @media all and (min-width: 768px) {
+    margin: 0 100px;
   }
 }

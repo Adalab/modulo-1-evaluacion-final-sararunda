@@ -1,7 +1,6 @@
+// SECTION 1 MOBILE VERSION
 .section-1 {
   background-color: $grey;
-  display: grid;
-  grid-template-columns: 1fr;
   &__title_advantages {
     text-align: center;
     font-family: $font-title;
@@ -13,6 +12,9 @@
   }
   &__advantages {
     text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+
     &__icon_order {
       width: 90px;
       height: 99px;
@@ -28,6 +30,18 @@
       font-family: $font-title;
       color: $green-dark;
       padding-bottom: 20px;
+    }
+  }
+}
+// SECTION-1 TABLET VERSION
+/**/
+/**/
+@media all and (min-width: 768px) {
+  .section-1 {
+    &__advantages {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 42px;
+      padding: 30px 0 70px 0;
     }
   }
 }
