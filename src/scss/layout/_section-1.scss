@@ -13,23 +13,22 @@
   &__advantages {
     text-align: center;
     display: grid;
-    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 20px;
 
     &__icon_order {
       width: 90px;
       height: 99px;
-      margin: 20px 0;
     }
     &__title_order {
       font-family: $font-title;
       font-size: 20px;
       color: $green-dark;
-      padding-bottom: 12px;
+      padding-top: 20px;
     }
     &__text_order {
       font-family: $font-title;
       color: $green-dark;
-      padding-bottom: 20px;
     }
   }
 }

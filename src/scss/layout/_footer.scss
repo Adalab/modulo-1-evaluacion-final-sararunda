@@ -88,20 +88,29 @@
   font-size: 20px;
   transition-property: all;
   padding: 40px 0 0 40px;
-}
-.arrow:hover {
-  animation-name: intro;
+  animation-name: bounce;
   animation-duration: 0.8s;
-  animation-iteration-count: 1;
-}
-@keyframes intro {
-  from {
-    opacity: 0;
-    transform: scale(-10);
+  animation-iteration-count: infinite;
+  &:hover {
+    animation: none;
   }
-  to {
-    opacity: 1;
-    transform: scale(1);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 /**/

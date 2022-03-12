@@ -3,25 +3,32 @@
   background-image: url("../images/header.jpg");
   background-size: cover;
   background-position: center center;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
+  height: 100vh;
+
   &__menu {
     position: fixed;
     padding-top: 55px;
     font-size: 24px;
     color: #0c474b;
     padding-left: 33px;
+    top: 0;
+    left: 0;
   }
   &__icon-brand {
     padding: 19px 0 100px 0;
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     margin: auto;
   }
   &__top {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding: 19px 0 64px 0;
+    padding: 10px 30px 0 30px;
     &__title_header {
       color: $green-dark;
       font-size: 24px;
@@ -47,12 +54,17 @@
 // HEADER TABLET VERSION SCSS
 @media all and (min-width: 768px) {
   .header {
-    &__top {
-      align-items: flex-start;
-      padding-left: 147px;
-    }
+    justify-content: flex-start;
     &__menu {
       padding-left: 82px;
+    }
+    &__top {
+      padding-left: 147px;
+      text-align: left;
+      width: 465px;
+      &__title_header {
+        font-size: 36px;
+      }
     }
   }
 }
