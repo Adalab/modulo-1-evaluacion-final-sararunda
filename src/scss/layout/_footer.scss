@@ -5,40 +5,81 @@
   padding: 56px 0 63px 0;
   background-color: $green-dark;
   position: relative;
-}
-.info {
-  font-family: $font-title;
-  font-size: 20px;
-  font-weight: 600;
-  color: $blue-clear;
-  padding-top: 20px;
-}
-.list {
-  list-style: none;
+  &__shop {
+    width: 200px;
+    &__info {
+      font-family: $font-title;
+      font-size: 20px;
+      font-weight: 600;
+      color: $blue-clear;
+      padding-top: 20px;
+      &__list {
+        list-style: none;
+        &__link_info {
+          font-family: $font-title;
+          font-size: 14px;
+          color: $blue-clear;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__we {
+    width: 200px;
+    &__info {
+      font-family: $font-title;
+      font-size: 20px;
+      font-weight: 600;
+      color: $blue-clear;
+      padding-top: 20px;
+      &__list {
+        list-style: none;
+        &__link_info {
+          font-family: $font-title;
+          font-size: 14px;
+          color: $blue-clear;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__contact {
+    width: 200px;
+    &__info {
+      font-family: $font-title;
+      font-size: 20px;
+      font-weight: 600;
+      color: $blue-clear;
+      padding-top: 20px;
+      &__list {
+        list-style: none;
+        &__link_info {
+          font-family: $font-title;
+          font-size: 14px;
+          color: $blue-clear;
+          text-decoration: none;
+        }
+      }
+    }
+    &__rrss {
+      padding-top: 20px;
+      font-size: 20px;
+      &__link_linked {
+        color: $grey;
+        padding-right: 20px;
+      }
+      &__link_insta {
+        color: $grey;
+        padding-right: 20px;
+      }
+      &__link_twit {
+        color: $grey;
+        padding-right: 20px;
+      }
+    }
+  }
 }
 
-.link_info {
-  // list-style: none;
-  font-family: $font-title;
-  font-size: 14px;
-  color: $blue-clear;
-  text-decoration: none;
-}
-.shop,
-.we,
-.contact {
-  width: 200px;
-}
-.rrss {
-  padding-top: 20px;
-  font-size: 20px;
-}
-.link_linked,
-.link_insta,
-.link_twit {
-  color: $grey;
-  padding-right: 11px;
-}
 .arrow {
   color: $grey;
   position: absolute;
@@ -46,4 +87,20 @@
   bottom: 16px;
   font-size: 24px;
   transition-property: all;
+  padding: 40px 0 0 40px;
+}
+.arrow:hover {
+  animation-name: intro;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+}
+@keyframes intro {
+  from {
+    opacity: 0;
+    transform: scale(-10);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
