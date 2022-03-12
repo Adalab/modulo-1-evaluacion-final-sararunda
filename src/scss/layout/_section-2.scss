@@ -43,17 +43,22 @@
       font-weight: 400;
     }
     &__buy_now {
-      padding: 12px 24px;
       background-color: $green-dark;
       border: none;
       color: $white;
       font-weight: 600;
       font-size: 16px;
       margin: 40px 0 92px 0;
-    }
-    &__buy_now:hover {
-      -webkit-transition: all 1.9s ease;
-      -webkit-transform: scale(1.1);
+      padding: 12px 0;
+      &:hover {
+        transition: all 1.9s ease;
+        transform: scale(1.1);
+      }
+      a {
+        color: $white;
+        text-decoration: none;
+        padding: 24px;
+      }
     }
     &__image_spaces {
       background-image: url("../images/creando-espacios.jpg");
