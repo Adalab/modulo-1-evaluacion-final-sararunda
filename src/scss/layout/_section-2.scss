@@ -24,6 +24,10 @@
       padding: 12px 24px;
       margin-bottom: 63px;
     }
+    &__link_buy:hover {
+      color: $green-dark;
+      transition: color 0.8s linear 0.2s;
+    }
   }
   &__article_spaces {
     display: flex;
@@ -53,6 +57,10 @@
       font-weight: 600;
       font-size: 16px;
       margin: 40px 0 92px 0;
+    }
+    &__buy_now:hover {
+      -webkit-transition: all 1.9s ease;
+      -webkit-transform: scale(1.1);
     }
     &__image_spaces {
       background-image: url("../images/creando-espacios.jpg");

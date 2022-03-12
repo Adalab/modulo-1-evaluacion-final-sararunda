@@ -1,9 +1,9 @@
 .section-1 {
   background-color: $grey;
+  display: grid;
+  grid-template-columns: 1fr;
   &__title_advantages {
     text-align: center;
-    display: grid;
-    grid-template-columns: 1fr;
     font-family: $font-title;
     color: $green-dark;
     padding: 41px 0 37px 0;
