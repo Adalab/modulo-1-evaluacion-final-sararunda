@@ -5,7 +5,7 @@
   padding: 56px 0 63px 0;
   background-color: $green-dark;
   position: relative;
-  &__shop {
+  &__section {
     width: 200px;
     &__info {
       font-size: 20px;
@@ -18,40 +18,9 @@
           font-size: 14px;
           color: $blue-clear;
           text-decoration: none;
-        }
-      }
-    }
-  }
-  &__we {
-    width: 200px;
-    &__info {
-      font-size: 20px;
-      font-weight: 600;
-      color: $blue-clear;
-      padding-top: 20px;
-      &__list {
-        list-style: none;
-        &__link_info {
-          font-size: 14px;
-          color: $blue-clear;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-  &__contact {
-    width: 200px;
-    &__info {
-      font-size: 20px;
-      font-weight: 600;
-      color: $blue-clear;
-      padding-top: 20px;
-      &__list {
-        list-style: none;
-        &__link_info {
-          font-size: 14px;
-          color: $blue-clear;
-          text-decoration: none;
+          &:hover {
+            color: $white;
+          }
         }
       }
     }
