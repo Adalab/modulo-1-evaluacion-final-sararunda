@@ -32,7 +32,7 @@
 // SECTION-1 TABLET VERSION
 /**/
 /**/
-@media all and (min-width: 768px) {
+@media all and (min-width: $tablet-breakpoint) {
   .section-1 {
     &__advantages {
       grid-template-columns: 1fr 1fr 1fr;

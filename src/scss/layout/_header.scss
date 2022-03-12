@@ -60,7 +60,7 @@
 // HEADER TABLET VERSION SCSS
 /**/
 /**/
-@media all and (min-width: 768px) {
+@media all and (min-width: $tablet-breakpoint) {
   .header {
     justify-content: flex-start;
     &__menu {
@@ -81,7 +81,7 @@
 // HEADER DESKTOP VERSION
 /**/
 /**/
-@media all and (min-width: 1200px) {
+@media all and (min-width: $desktop-breakpoint) {
   .header {
     &__menu {
       visibility: hidden;

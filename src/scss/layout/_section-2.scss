@@ -32,6 +32,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     background-color: $grey;
     &__title_spaces {
       padding: 87px 27px 0 27px;
@@ -75,7 +76,8 @@
 /**/
 /**/
 // SECTION-2 TABLET VERSION
-@media all and (min-width: 768px) {
+/**/
+@media all and (min-width: $tablet-breakpoint) {
   .section-2 {
     &__article_free {
       &__title_free {
@@ -83,8 +85,25 @@
       }
     }
     &__article_spaces {
+      text-align: center;
       &__title_spaces {
         font-size: 30px;
+      }
+    }
+  }
+}
+/**/
+/**/
+// SECTION-2 DESKTOP VERSION
+/**/
+@media all and (min-width: $desktop-breakpoint) {
+  .section-2 {
+    &__article_spaces {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      &__image_spaces {
+        height: 100%;
+        width: auto;
       }
     }
   }

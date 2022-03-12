@@ -72,49 +72,66 @@
       }
     }
   }
+  &__arrow {
+    color: $grey;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 20px;
+    transition-property: all;
+    padding: 40px 0 0 40px;
+    animation-name: bounce;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    &:hover {
+      animation: none;
+    }
+  }
+
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    10% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-8px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 }
 
-.arrow {
-  color: $grey;
-  position: absolute;
-  right: 30px;
-  bottom: 30px;
-  font-size: 20px;
-  transition-property: all;
-  padding: 40px 0 0 40px;
-  animation-name: bounce;
-  animation-duration: 0.8s;
-  animation-iteration-count: infinite;
-  &:hover {
-    animation: none;
-  }
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(0);
-  }
-  10% {
-    transform: translateY(0);
-  }
-  30% {
-    transform: translateY(-8px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 /**/
 /**/
 /**/
 // FOOTER TABLET VERSION
 /**/
-@media all and (min-width: 768px) {
+@media all and (min-width: $tablet-breakpoint) {
   .footer {
     flex-direction: row;
     padding-left: 118px;
+    &__arrow {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+}
+/**/
+/**/
+/**/
+// FOOTER DESKTOP VERSION
+/**/
+@media all and (min-width: $desktop-breakpoint) {
+  .footer {
+    justify-content: space-around;
+    &__arrow {
+      margin: 30px;
+    }
   }
 }
