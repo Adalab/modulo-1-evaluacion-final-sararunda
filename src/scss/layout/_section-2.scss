@@ -54,14 +54,14 @@
       font-size: 16px;
       margin: 40px 0 92px 0;
       padding: 12px 0;
-      &:hover {
-        transition: all 0.5s ease;
-        transform: scale(1.1);
-      }
-      a {
+      &__link {
         color: $white;
         text-decoration: none;
         padding: 24px;
+      }
+      &:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.1);
       }
     }
     &__image_spaces {
@@ -101,6 +101,7 @@
     &__article_spaces {
       display: grid;
       grid-template-columns: 50% 50%;
+
       &__image_spaces {
         height: 100%;
         width: auto;

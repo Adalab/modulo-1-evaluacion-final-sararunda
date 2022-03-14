@@ -45,14 +45,14 @@
       color: $white;
       font-weight: 600;
       font-size: 16px;
-      &:hover {
-        transition: all 0.5s ease;
-        transform: scale(1.1);
-      }
-      a {
+      &__link {
         color: $white;
         text-decoration: none;
         padding: 24px;
+      }
+      &:hover {
+        transition: all 0.5s ease;
+        transform: scale(1.1);
       }
     }
   }
@@ -90,16 +90,26 @@
     &__nav {
       display: block;
       position: absolute;
-      top: 77px;
+      top: 65px;
       left: 90px;
+      position: fixed;
+      background-color: $grey;
+      padding: 10px;
+      width: 380px;
+      border-radius: 20px;
+      opacity: 0.8;
 
       &__list {
         display: flex;
         list-style: none;
+        padding-left: 10px;
+
         &__link {
           color: $green-dark;
           text-decoration: none;
           padding: 20px;
+
+          align-items: center;
           &:first-child {
             padding-left: 0;
           }
