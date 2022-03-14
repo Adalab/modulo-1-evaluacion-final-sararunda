@@ -101,6 +101,18 @@
     &__article_spaces {
       display: grid;
       grid-template-columns: 50% 50%;
+      &__title_spaces {
+        padding-left: 0;
+        width: 300px;
+        text-align: left;
+        margin: auto;
+      }
+      &__text_spaces {
+        padding-left: 0;
+        width: 300px;
+        text-align: left;
+        margin: auto;
+      }
 
       &__image_spaces {
         height: 100%;
