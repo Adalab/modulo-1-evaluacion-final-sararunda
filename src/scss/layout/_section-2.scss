@@ -29,6 +29,18 @@
       transition: color 0.8s linear 0.2s;
     }
   }
+  &__product_top {
+    width: 100vw;
+    background-color: $green-dark;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    &__title_product {
+      padding-bottom: 20px;
+    }
+  }
   &__article_spaces {
     display: flex;
     flex-direction: column;
@@ -83,6 +95,15 @@
     &__article_free {
       &__title_free {
         font-size: 30px;
+      }
+    }
+    &__product_top {
+      &__star_product {
+        display: flex;
+        flex-direction: row;
+        &__item_star {
+          padding: 30px;
+        }
       }
     }
     &__article_spaces {
